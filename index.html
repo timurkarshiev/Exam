@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Pokemons</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header></header>
+
+    <!-- Main -->
+    <main>
+      <section class="pokemons">
+        <div
+          class="container pokemons__container d-flex flex-column align-content-center position-relative"
+        >
+          <img
+            class="m-auto"
+            src="./img/pokemon_logo.svg"
+            alt="pokemon logo"
+            width="610"
+            height="225"
+          />
+          <img
+            class="heart position-absolute"
+            src="./img/heart.svg"
+            alt="heart-icon"
+            width="50"
+            height="50"
+          />
+
+          <form class="form d-flex gap-4 mx-auto">
+            <select class="form__select" name="gross">
+              <option class="form__option">Gross</option>
+            </select>
+
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="Search" />
+            </label>
+
+            <select class="form__select" name="gross">
+              <option class="form__option">Aa-Zz</option>
+            </select>
+
+            <button class="form__button"><b>Button</b></button>
+          </form>
+
+          <ul class="pokemons__list d-flex flex-wrap"></ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <script src="./bootstrap/bootstrap.bundle.js"></script>
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
